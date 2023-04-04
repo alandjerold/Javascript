@@ -7,23 +7,22 @@
     <title>condições</title>
 </head>
 <body>
-    <h1>Qual o país em que vive?</h1>
-<input type="text" name="pais" id="pais">
-<button onclick="verificarPais()">Enviar</button>
+  <h1>Qual o país em que vive?</h1>
+  <input type="text" name="pais" id="pais">
+  <input type="button" value="Enviar" onclick="verificar()">
 
-<div id="resposta"></div>
+  <div id="res">Resposta </div>
 
-<script>
-function verificarPais() {
-  var inputPais = document.getElementById("pais");
-  var resposta = document.getElementById("resposta");
-  
-  if (inputPais === "brasil") {
-    resposta.innerHTML = "Você é brasileiro."
-  } else {
-    resposta.innerHTML = "Você é estrangeiro."
-  }
-}
-</script>
+  <script>
+      function verificar() {
+          const ps = document.getElementById('pais')
+          const res = document.getElementById('res')
+          
+        if (ps.value == "brasil") {res.innerHTML = "Você é Brasileiro"}
+          else {res.innerHTML = "Você é gay"}
+          
+          
+      }
+  </script>
 </body>
 </html>

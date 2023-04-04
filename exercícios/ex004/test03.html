@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test03</title>
+    <style>
+        #calc{
+            width: 500px;
+            margin: auto;
+            text-align: center;
+            
+           
+            
+        }
+        #res{
+            margin-left: -50px;
+            margin-top: 10px;
+        }
+    
+
+        body{
+            font: normal 15px arial;
+        }
+    </style>
+</head>
+<body>
+    <div id="calc">
+        <h1>Vamos somar!</h1>
+        <input type="number" name="txtn1" id="txt1"> +
+        <input type="number" name="txtn2" id="txt2">
+        <input type="button" value="Somar" onclick="somar()">
+        <div id="res">Resultado</div>
+
+    </div>
+    <script>
+        function somar(){
+        var t1 = window.document.getElementById('txt1')
+        var t2 = window.document.getElementById('txt2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(t1.value)
+        var n2 = Number(t2.value)
+        var s = n1 + n2
+        res.innerHTML = `O valor de ${n1} mais ${n2} é ${s}`
+
+
+    }
+    </script>
+</body>
+</html>

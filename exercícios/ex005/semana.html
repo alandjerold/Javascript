@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dia da semana</title>
+</head>
+<body>
+    <h1>Aperte o botão para saber o dia da semana</h1>
+    <input type="button" value="Enviar" onclick="semanas()">
+    <div id="semana"></div>
+    <div id="agora"></div>
+    <div id="res"></div>
+    
+
+
+    <script>
+        function semanas(){
+            
+            var semana = new Date()
+            var agora = semana.getDay()
+            var res = document.getElementById('res')
+            res.innerHTML = (`Hoje é dia ${agora}`)
+
+            switch(agora){
+                case 0: res.innerHTML = ('Hoje é Domingo')
+                        break
+                case 1: res.innerHTML = ('Hoje é Segunda')
+                        break
+                case 2: res.innerHTML = ('Hoje é Terça')
+                        break
+                case 3: res.innerHTML = ('Hoje é Quarta')
+                        break
+                case 4: res.innerHTML = ('Hoje é Quinta')
+                        break
+                case 5: res.innerHTML = ('Hoje é Sexta')
+                        break /* o break serve para fazer com que fique travado nessa variável e não vá para outra além dessa */
+                case 6: res.innerHTML = ('Hoje é Sabádo')
+            }
+            
+            
+
+        }
+    </script>
+</body>
+</html>

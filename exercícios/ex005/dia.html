@@ -19,6 +19,15 @@
              var agora = new Date()
              var hora = agora.getHours()
              res.innerHTML = (`Agora são ${hora}`)
+             if(hora > 12){
+                res.innerHTML += ('<p> Boa tarde </p>')
+             }
+             else if(hora > 18){
+                res.innerHTML += ('<p> Boa noite </p>')
+             }
+             else if(hora < 12){
+                res.innerHTML += (' <p> Bom dia </p>')
+             }
 
          
         }

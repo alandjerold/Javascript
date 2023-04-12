@@ -10,15 +10,22 @@
 <h1>Quem é você ?</h1>
 <div id="centro">
 
-    <label for="ano"><strong>Em que ano você nasceu?</strong></label><input type="number" name="iano" id="ano" required size="10%">
+    
+    <p><strong> Ano de nascimento:</strong>
+        <input type="number" name="iano" id="fano" required ></p>
 
-    <p><strong>Qual seu gênero?</strong></p>
+    <p><strong>Qual seu gênero:</strong>
 
-    <input type="radio" name="sexo" id="ifem" value="Masculino" required><label for="ifem">Feminino</label>
+    <input type="radio" name="sexo" id="ifem" value="Masculino" required><label  for="ifem">Feminino</label>
 
     <input type="radio" name="sexo" id="imas" value="Feminino" required><label for="imas">Masculino</label>
+</p>
+<p> <input type="button" value="Verificar" onclick="verificar()"></p>
 
+<div id="res"> Preencha os dados acima para ter seus resultados!</div>
 </div>
+
+
 
     <script src="script.js"></script>
 </body>

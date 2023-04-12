@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
-*{
-    margin: 0px;
-    padding: 0px;
-} 
+
 body{
     background-color: rgb(57, 171, 236);
     text-align: center;
@@ -12,19 +9,14 @@ body{
 h1{
     margin-bottom: 10px;
 }
-p{
-    font-size: 1.2em;
-    
-    
-}
+
 #ano{
     width: 50px;
     margin-left: 5px;
 }
 #centro{
-    display: block;
     margin-top: 100px;
-    height: 400px;
+    
     width: 400px;
     background-color: white;
     margin: auto;
@@ -33,4 +25,12 @@ p{
     padding-left: 10px;
     padding-top: 10px;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+
+}
+#res{
+    text-align: center;
+    padding-bottom: 1%;
+}
+img{
+    padding-top: 5px;
 }

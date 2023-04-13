@@ -21,8 +21,10 @@
 
             <div>
                 <p>Fim:
-                <input type="number" name="fim" id="ofim"></div>
+                <input type="number" name="ofim" id="fim">
             </p>
+            </div>
+            
             <div>
                 <p>Pular:
                 <input type="number" name="pule" id="pular">
@@ -31,10 +33,13 @@
 
         <div>
             <p>
-                <input type="button" value="Calcular" id="calcular">
+                <input type="button" value="Calcular" id="calcular" onclick="contar()">
             </p>
         </div>
+
+        <div id="res"></div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

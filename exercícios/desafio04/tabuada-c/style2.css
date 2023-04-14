@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(174, 0, 255);
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.692);
+    width: 400px;
+}
